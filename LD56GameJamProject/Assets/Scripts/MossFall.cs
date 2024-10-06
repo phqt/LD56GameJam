@@ -7,7 +7,7 @@ public class MossFall : MonoBehaviour
 {
     private bool isHealed = false;
     public GameObject thePlayer;
-    public float healAmount = 100f;
+    public float healAmount = 50f;
 
     public PlayerHealth health;
 
@@ -20,4 +20,14 @@ public class MossFall : MonoBehaviour
             isHealed = true;
         }
     }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Player"))
+    //    {
+    //        Debug.Log("player on moss");
+    //        thePlayer.GetComponent<PlayerMovement>().resetVelocity();
+    //    }
+
+    //}
 }

@@ -7,6 +7,7 @@ public class MushroomBounce : MonoBehaviour
     public float bounceStrength = 5f;
     public Rigidbody2D rb;
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

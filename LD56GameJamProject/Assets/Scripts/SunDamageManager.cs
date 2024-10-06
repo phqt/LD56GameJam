@@ -13,6 +13,8 @@ public class SunDamageManager : MonoBehaviour
 
     public float scaleReductionFactor = 0.8f;
 
+    public float sunDamageDelay = 2f;
+
     void Update()
     {
         if (inSun == true)
@@ -27,11 +29,11 @@ public class SunDamageManager : MonoBehaviour
 
     IEnumerator sunDamage()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(sunDamageDelay);
         thePlayer.GetComponent<PlayerHealth>().TakeDamage(damageAmount);
         //thePlayer.transform.DOScale(0.8f, 1f).SetEase(Ease.OutBounce);
         Vector3 newScale = thePlayer.transform.localScale * scaleReductionFactor;
-        thePlayer.transform.DOScale(newScale, 1f).SetEase(Ease.OutBounce);
+        thePlayer.transform.DOScale(newScale, 1f).SetEase(Ease.InOutSine);
         stopDamage = false;
     }
 

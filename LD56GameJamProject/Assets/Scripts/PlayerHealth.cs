@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
     public GameObject thePlayer;
     private SpriteRenderer spritePlayer;
 
+    public float waterPickedUp;
+
     public void TakeDamage(float damageAmount)
     {
         healthAmount -= damageAmount;
@@ -26,6 +28,20 @@ public class PlayerHealth : MonoBehaviour
         {
             healAmount = maxHealth;
         }
+    }
+
+    public void addWater (float waterAmount)
+    {
+        waterPickedUp += waterAmount;
+        if (waterPickedUp >= 2f)
+        {
+            waterPickedUp = 2f;
+        }
+    }
+
+    public void resetHealth()
+    {
+        healthAmount = 50f;
     }
 
     public void Die()

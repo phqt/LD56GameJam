@@ -58,6 +58,12 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+
+    public void resetVelocity()
+    {
+        yVelocityMax = 0f;
+    }
+
     private void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
