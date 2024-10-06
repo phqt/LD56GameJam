@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c4a2747a2bf9e5b479e863781a5a6790
+guid: b10a0d32d127d9a48a4e12b4e5cb26fe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,11 +43,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.538835, y: 0.43959013}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -97,22 +97,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: move_2_0
+      name: "\u6C34\u73E0-Sheet_0"
       rect:
         serializedVersion: 2
-        x: 18
-        y: 21
-        width: 16
-        height: 13
+        x: 1
+        y: 3
+        width: 15
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c492ce28b236843429da94263ec123d4
-      internalID: -723382618
+      spriteID: 4b96bb39525f2894bb2d7868b4a03332
+      internalID: -589341195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u6C34\u73E0-Sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 3
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cb98b0acf4a7d459c01c4648b8c539
+      internalID: -37430350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u6C34\u73E0-Sheet_2"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 3
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e05f787785e2b459f5fc8024da4eda
+      internalID: 1692955821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u6C34\u73E0-Sheet_3"
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 3
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910a75621cc9a134e93ae430c1f0d567
+      internalID: -975894082
       vertices: []
       indices: 
       edges: []
@@ -121,14 +184,17 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      move_2_0: -723382618
+      "\u6C34\u73E0-Sheet_0": -589341195
+      "\u6C34\u73E0-Sheet_1": -37430350
+      "\u6C34\u73E0-Sheet_2": 1692955821
+      "\u6C34\u73E0-Sheet_3": -975894082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

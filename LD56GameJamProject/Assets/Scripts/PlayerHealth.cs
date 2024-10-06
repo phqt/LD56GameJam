@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
     public GameObject thePlayer;
     private SpriteRenderer spritePlayer;
 
+    private Vector3 currentScale;
+
     public float waterPickedUp;
 
     public void TakeDamage(float damageAmount)
@@ -30,14 +32,19 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void addWater (float waterAmount)
+    private void Update()
     {
-        waterPickedUp += waterAmount;
-        if (waterPickedUp >= 2f)
+        currentScale = thePlayer.transform.localScale;
+
+        if (currentScale.y >= 25.6f)
         {
-            waterPickedUp = 2f;
+            currentScale = new Vector3(-25.6f, 25.6f, 25.6f);
+            thePlayer.transform.localScale = currentScale;
         }
     }
+
+ 
+
 
     public void resetHealth()
     {

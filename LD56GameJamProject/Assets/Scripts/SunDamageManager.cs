@@ -34,7 +34,17 @@ public class SunDamageManager : MonoBehaviour
         //thePlayer.transform.DOScale(0.8f, 1f).SetEase(Ease.OutBounce);
         Vector3 newScale = thePlayer.transform.localScale * scaleReductionFactor;
         thePlayer.transform.DOScale(newScale, 1f).SetEase(Ease.InOutSine);
+        thePlayer.GetComponent<Animator>().SetBool("SizeI", false);
+        thePlayer.GetComponent<Animator>().SetBool("SizeD", true);
+        thePlayer.GetComponent<Animator>().SetBool("isWalk", false);
+        thePlayer.GetComponent<Animator>().SetBool("isJump", false);
         stopDamage = false;
+        Invoke("ResetSizeI", 1.5f);
+    }
+
+    private void ResetSizeI()
+    {
+        thePlayer.GetComponent<Animator>().SetBool("SizeD", false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
