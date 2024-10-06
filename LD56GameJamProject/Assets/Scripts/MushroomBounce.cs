@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class MushroomBounce : MonoBehaviour
 {
-    public float bounceStrength = 5f;
+    public float bounceStrength = 20f;
     public Rigidbody2D rb;
-
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("player collided");
-            rb.AddForce(Vector2.up * Time.deltaTime * bounceStrength, ForceMode2D.Impulse);
+            Debug.Log("Player collided with mushroom");
+            Rigidbody2D playerRb = collision.GetComponent<Rigidbody2D>();
+            if (playerRb != null)
+            {
+                // Set the player's vertical velocity to the bounce strength
+                Vector2 velocity = playerRb.velocity;
+                velocity.y = bounceStrength;
+                playerRb.velocity = velocity;
+            }
         }
     }
 }
