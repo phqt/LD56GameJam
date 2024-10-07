@@ -14,7 +14,6 @@ public class MushroomBounce : MonoBehaviour
             Rigidbody2D playerRb = collision.GetComponent<Rigidbody2D>();
             if (playerRb != null)
             {
-                // Set the player's vertical velocity to the bounce strength
                 Vector2 velocity = playerRb.velocity;
                 velocity.y = bounceStrength;
                 playerRb.velocity = velocity;
