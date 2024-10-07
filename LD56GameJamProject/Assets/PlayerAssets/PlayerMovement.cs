@@ -13,7 +13,12 @@ public class PlayerMovement : MonoBehaviour
     public float yVelocityMax;
     public float deathGate = 20;
     public float fallDamageAmount = 50f;
-    
+    public AudioSource audioSource;
+    public AudioClip footstepClip;
+    public AudioClip waterClip;
+    public AudioClip sunburnClip;
+    public AudioClip jumpClip;
+
     private Animator animator;
 
     [SerializeField] private Rigidbody2D rb;
@@ -23,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
     }
 
     void Update()
@@ -50,6 +60,28 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isWalk", false);
         }
     }
+
+    public void PlayFootstepSound()
+    {
+        audioSource.PlayOneShot(footstepClip);
+    }
+
+    public void PlaySunburnSound()
+    {
+        audioSource.PlayOneShot(sunburnClip);
+    }
+
+    public void PlayWaterSound()
+    {
+        audioSource.PlayOneShot(waterClip);
+    }
+
+    public void PlayJumpSound()
+    {
+        audioSource.PlayOneShot(jumpClip);
+    }
+
+
 
     private void FixedUpdate()
     {

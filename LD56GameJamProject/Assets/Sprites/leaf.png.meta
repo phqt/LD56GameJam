@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a8420f51764146841909d0e91cee70ea
+guid: c9d718e79e207594e93db16fb748f975
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,85 +97,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u82D4\u85D3-Sheet_0"
+      name: leaf_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 8
-        width: 46
-        height: 19
+        x: 0
+        y: 60
+        width: 64
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daabe71a07d36224cad6cc21a228a1e7
-      internalID: -2044730465
+      spriteID: c4052a9619c58ef41a52c907529f4cd1
+      internalID: 681001485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u82D4\u85D3-Sheet_1"
+      name: leaf_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 8
-        width: 46
-        height: 19
+        x: 73
+        y: 56
+        width: 74
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a711302b6b621c345beef07924086617
-      internalID: 1191460815
+      spriteID: f2aa91c9a139a654ca9e3698c2cd2fb3
+      internalID: -31812007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u82D4\u85D3-Sheet_2"
+      name: leaf_2
       rect:
         serializedVersion: 2
-        x: 97
-        y: 8
-        width: 46
-        height: 19
+        x: 170
+        y: 11
+        width: 31
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c26ef6c6ec896242975017e9200e638
-      internalID: 1039156666
+      spriteID: b6230af94bd4e384e9029520e25f5986
+      internalID: 190133795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u82D4\u85D3-Sheet_3"
+      name: leaf_3
       rect:
         serializedVersion: 2
-        x: 145
-        y: 8
-        width: 46
-        height: 19
+        x: 5
+        y: 19
+        width: 63
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 942dfda0e8e08504491a4ab51d1bc965
-      internalID: 377269566
+      spriteID: 5810d6265b845e04894a59ab6d49a689
+      internalID: 1280885530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leaf_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 6
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e156f6b2199bb247bce87090470e47d
+      internalID: 1252097441
       vertices: []
       indices: 
       edges: []
@@ -191,10 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u82D4\u85D3-Sheet_0": -2044730465
-      "\u82D4\u85D3-Sheet_1": 1191460815
-      "\u82D4\u85D3-Sheet_2": 1039156666
-      "\u82D4\u85D3-Sheet_3": 377269566
+      leaf_0: 681001485
+      leaf_1: -31812007
+      leaf_2: 190133795
+      leaf_3: 1280885530
+      leaf_4: 1252097441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

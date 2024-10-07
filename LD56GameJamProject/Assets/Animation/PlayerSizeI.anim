@@ -21,17 +21,17 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: 33310eb423406b84ca0f8869899ed321, type: 3}
-    - time: 0.3
-      value: {fileID: 21300000, guid: 0d2b5a8dcee7b4a4982078149fa1acf4, type: 3}
-    - time: 0.6
-      value: {fileID: 21300000, guid: 4866c5d32fe3c834f886ea9618008810, type: 3}
-    - time: 0.9
-      value: {fileID: 21300000, guid: 8cd284224eb211445a19e0f90a0d7274, type: 3}
-    - time: 1.2
-      value: {fileID: 21300000, guid: 8f6a75cd4f12b5e409404ffdcbfd213b, type: 3}
-    - time: 1.8333334
-      value: {fileID: 21300000, guid: 2bd4c9297a933c24db9002b90ed00604, type: 3}
+      value: {fileID: 1721655747, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
+    - time: 0.33333334
+      value: {fileID: -371209248, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
+    - time: 0.6666667
+      value: {fileID: 1064954369, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
+    - time: 1
+      value: {fileID: 434244548, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
+    - time: 1.3333334
+      value: {fileID: 625107128, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
+    - time: 1.5666667
+      value: {fileID: 625107128, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -54,18 +54,18 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 33310eb423406b84ca0f8869899ed321, type: 3}
-    - {fileID: 21300000, guid: 0d2b5a8dcee7b4a4982078149fa1acf4, type: 3}
-    - {fileID: 21300000, guid: 4866c5d32fe3c834f886ea9618008810, type: 3}
-    - {fileID: 21300000, guid: 8cd284224eb211445a19e0f90a0d7274, type: 3}
-    - {fileID: 21300000, guid: 8f6a75cd4f12b5e409404ffdcbfd213b, type: 3}
-    - {fileID: 21300000, guid: 2bd4c9297a933c24db9002b90ed00604, type: 3}
+    - {fileID: 1721655747, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
+    - {fileID: -371209248, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
+    - {fileID: 1064954369, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
+    - {fileID: 434244548, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
+    - {fileID: 625107128, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
+    - {fileID: 625107128, guid: 124874ad72a621244b8062f7a8b95af7, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.85
+    m_StopTime: 1.5833334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -84,4 +84,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: PlayWaterSound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

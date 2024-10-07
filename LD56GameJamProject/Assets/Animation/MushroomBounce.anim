@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerIdleAnim
+  m_Name: MushroomBounce
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1912767624, guid: b88ba11fdc1ff8d458c76d12c57aef6b, type: 3}
-    - time: 0.25
-      value: {fileID: 1027187424, guid: b88ba11fdc1ff8d458c76d12c57aef6b, type: 3}
-    - time: 0.73333335
-      value: {fileID: -202876694, guid: b88ba11fdc1ff8d458c76d12c57aef6b, type: 3}
+      value: {fileID: 21300000, guid: 2436c3f968325c94b845a69a73c930fa, type: 3}
+    - time: 0.1
+      value: {fileID: 21300000, guid: 699ea7315d906ea45a2b3e3d0e2604c5, type: 3}
+    - time: 0.21666667
+      value: {fileID: 21300000, guid: 7efeb7046b2150c4481abdaa433099c7, type: 3}
+    - time: 0.33333334
+      value: {fileID: 21300000, guid: 5f7b66993f056b243bcc1260df2b2b01, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,15 +50,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1912767624, guid: b88ba11fdc1ff8d458c76d12c57aef6b, type: 3}
-    - {fileID: 1027187424, guid: b88ba11fdc1ff8d458c76d12c57aef6b, type: 3}
-    - {fileID: -202876694, guid: b88ba11fdc1ff8d458c76d12c57aef6b, type: 3}
+    - {fileID: 21300000, guid: 2436c3f968325c94b845a69a73c930fa, type: 3}
+    - {fileID: 21300000, guid: 699ea7315d906ea45a2b3e3d0e2604c5, type: 3}
+    - {fileID: 21300000, guid: 7efeb7046b2150c4481abdaa433099c7, type: 3}
+    - {fileID: 21300000, guid: 5f7b66993f056b243bcc1260df2b2b01, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.35000002
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

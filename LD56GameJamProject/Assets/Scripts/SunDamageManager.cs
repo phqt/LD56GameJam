@@ -9,11 +9,11 @@ public class SunDamageManager : MonoBehaviour
     public bool stopDamage;
 
     public GameObject thePlayer;
-    public float damageAmount = 10f;
+    public float damageAmount = 3f;
 
     public float scaleReductionFactor = 0.8f;
 
-    public float sunDamageDelay = 2f;
+    public float sunDamageDelay = 0.5f;
 
     void Update()
     {
@@ -30,10 +30,11 @@ public class SunDamageManager : MonoBehaviour
     IEnumerator sunDamage()
     {
         yield return new WaitForSeconds(sunDamageDelay);
+        AudioManager.instance.PlaySound(AudioManager.SoundEffect.Sunburn);
         thePlayer.GetComponent<PlayerHealth>().TakeDamage(damageAmount);
         //thePlayer.transform.DOScale(0.8f, 1f).SetEase(Ease.OutBounce);
         Vector3 newScale = thePlayer.transform.localScale * scaleReductionFactor;
-        thePlayer.transform.DOScale(newScale, 1f).SetEase(Ease.InOutSine);
+        thePlayer.transform.DOScale(newScale, 0.3f).SetEase(Ease.InOutSine);
         thePlayer.GetComponent<Animator>().SetBool("SizeI", false);
         thePlayer.GetComponent<Animator>().SetBool("SizeD", true);
         thePlayer.GetComponent<Animator>().SetBool("isWalk", false);

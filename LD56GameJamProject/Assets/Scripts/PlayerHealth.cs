@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentScale.y >= 25.6f)
         {
-            currentScale = new Vector3(-25.6f, 25.6f, 25.6f);
+            currentScale = new Vector3(currentScale.x, 25.6f, 25.6f);
             thePlayer.transform.localScale = currentScale;
         }
     }
